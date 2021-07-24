@@ -1,9 +1,9 @@
 module.exports = {
 	name: "ping",
 	category: "info",
-	description: "Ottieni il ping del bot",
+	description: "Get the bot's ping",
 	usage: "ping",
 	run: (client, message) => {
-		message.channel.send(`Il ping del bot è di: ${client.ws.ping} ms`);
+		message.channel.send(`The bot's ping is: ${client.ws.ping} ms`);
 	}
 }
