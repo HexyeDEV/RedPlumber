@@ -4,7 +4,7 @@ const randomPuppy = require("random-puppy");
 module.exports = {
 	name: "meme",
 	category: "fun",
-	description: "Invia un meme casuale",
+	description: "Send a random meme",
 	usage: "meme",
 	run: async (client, message, args) =>{
 		const subReddits = ["dankmeme", "meme", "me_irl"]
