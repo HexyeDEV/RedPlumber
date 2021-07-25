@@ -1,6 +1,6 @@
 module.exports = {
   name: 'weather',
-  description: 'Weather Command',
+  description: 'See the weather on a location.',
   usage: 'weather <location>',
   execute(message, args, Discord, weather) {
     weather.find({search: args.join(" "), degreeType: `C`}, function (error, result) {
