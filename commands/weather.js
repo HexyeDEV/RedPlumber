@@ -1,7 +1,7 @@
 module.exports = {
   name: 'weather',
   description: 'Weather Command',
-  usage: 'Used to check the weather of a location.',
+  usage: 'weather <location>',
   execute(message, args, Discord, weather) {
     weather.find({search: args.join(" "), degreeType: `C`}, function (error, result) {
             if(error) return message.channel.send(error);
